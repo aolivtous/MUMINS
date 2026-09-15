@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Outputs / checkpoints / logs (large, machine-specific)
+outputs/
+checkpoints/
+*.pt
+*.npy
+logs_tensorboard/
+jobs_train/
+jobs_test/
+wandb/
+wandb_logs/
+*.log
+
+# Data (do not commit real imaging data or full local metadata CSVs)
+*.nii
+*.nii.gz
+our_B*.csv
+!data/oasis_samples.txt
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

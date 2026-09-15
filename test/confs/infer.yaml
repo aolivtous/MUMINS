@@ -1,0 +1,27 @@
+diffusion_img_size: ???
+diffusion_depth_size: ???
+diffusion_num_channels: ???
+dim_mults: [1,2,4,8]
+denoising_fn: Unet3D
+timesteps: ???
+loss_type: l1 
+learned_variance: False
+model_path: ???
+model_num: ???
+out_dir: ???
+diff: ???
+dataset: ???
+mode: ???
+data_type: ???
+root_dir: ???
+use_metadata: ???
+sampler: ddim          # 'ddpm' or 'ddim'
+skip_interval: 5      # only used if sampler=ddim
+variance_start: 0.05 # determines when to start using the variance propagation (steps*variance_start)
+trained_with_fsdp: False
+num_seeds: 1
+base_seed: 42
+eta: 1
+diff_blur_mode: zero  # "zero", "gt", "mean", "median"
+shard_id: 1
+num_shards: 1

@@ -1,0 +1,27 @@
+# Core
+# Install PyTorch separately first, matching your CUDA version, following
+# https://pytorch.org/get-started/locally/  (MUMINS was trained with FSDP on
+# multi-GPU nodes for OASIS-3 128³ volumes; any recent CUDA-enabled build should work).
+# torch>=2.1
+# torchvision
+
+hydra-core>=1.3
+omegaconf>=2.3
+numpy
+pandas
+scipy
+scikit-image
+matplotlib
+monai
+SimpleITK
+einops
+einops-exts
+rotary-embedding-torch
+blobfile
+tensorboard
+transformers 
+
+# Optional (only needed for experiment tracking / specific inference options)
+wandb              # only if model.use_wandb=True
+   
+
