@@ -1,7 +1,6 @@
 # 🔮 MUMINS: Metadata-conditioned Uncertainty-aware Medical Image Next-state Synthesis
 
 [![arXiv](https://img.shields.io/badge/arXiv-TODO-b31b1b.svg)](https://arxiv.org/abs/TODO)
-[![WACV 2027](https://img.shields.io/badge/WACV-2027%20(under%20review)-orange.svg)](#citation)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ![MUMINS overview](assets/mumins_overview.png)
@@ -13,7 +12,7 @@ MUMINS jointly diffuses the baseline scan `x` and the baseline→follow-up resid
 - 🫁 **Lung CT** — pulmonary nodule growth, following [NGP-Net](https://pubmed.ncbi.nlm.nih.gov/41557569/)'s preprocessing and splits.
 - 🧠 **Brain MRI** — Alzheimer's disease progression on [OASIS-3](https://sites.wustl.edu/oasisbrains/).
 
-📄 [Read the paper](https://arxiv.org/abs/TODO) *(link goes live once the arXiv submission is processed)*
+📄 [Read the paper](https://arxiv.org/abs/TODO)
 
 ---
 
@@ -161,7 +160,6 @@ If you find this work useful, please consider to ⭐ star this repository and ci
   eprint        = {TODO},
   archivePrefix = {arXiv},
   primaryClass  = {cs.CV},
-  note          = {arXiv:TODO -- update once assigned; under review at WACV 2027}
 }
 ```
 
