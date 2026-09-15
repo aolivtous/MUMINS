@@ -51,7 +51,7 @@ All dataset paths are passed in via Hydra config/CLI overrides or the `scripts/*
 3. Build a `our_B_filtered.csv` pair table with one row per (baseline, follow-up) pair, with the columns consumed by `dataset/OASIS_Dataset.py` — see the full column list and `split` rules in [Configuration](#configuration--training) below.
 4. Point `OASIS_DATA_ROOT` (in the scripts) or `dataset.root_dir` (Hydra) at this CSV.
 
-To save you from having to re-derive our exact experimental split, **[`data/oasis_samples.txt`](data/oasis_samples.txt)** lists every OASIS-3 scan we used (1352 scans / 492 subjects / 1433 pairs, 70/15/15 split, kept intra-patient) by its own session ID (e.g. `OAS30001_MR_d0129_anat3`) — no local paths, just IDs you can match against your own OASIS-3 download. See [Reproducing the OASIS-3 split](#reproducing-the-oasis-3-split).
+To save you from having to re-derive our exact experimental split, **[`data/oasis_samples.txt`](data/oasis_samples.txt)** lists every OASIS-3 scan we used by its own session ID (e.g. `OAS30001_MR_d0129_anat3`) which you can match against your own OASIS-3 download. See [Reproducing the OASIS-3 split](#reproducing-the-oasis-3-split).
 
 **🫁 Lung CT — Pulmonary Nodule Growth (PNG)**
 
