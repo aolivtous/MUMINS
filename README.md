@@ -163,7 +163,7 @@ If you find this work useful, please consider to ⭐ star this repository and ci
 }
 ```
 
-**Authors:** Anna Oliveras Tous¹˒², Roger Marí¹, Rafael Redondo¹, Oriol Guardià-Olivella¹, Cynthia Ifeyinwa Ugwu¹, Ana Tost¹, Bhalaji Nagarajan³, Carolina Migliorelli¹, Vicent Ribas¹, Petia Radeva²˒⁴
+**Authors:** Anna Oliveras¹˒², Roger Marí¹, Rafael Redondo¹, Oriol Guardià-Olivella¹, Cynthia Ifeyinwa Ugwu¹, Ana Tost¹, Bhalaji Nagarajan³, Carolina Migliorelli¹, Vicent Ribas¹, Petia Radeva²˒⁴
 
 ¹ Eurecat, Centre Tecnològic de Catalunya, Barcelona, Spain
 ² Dept. de Matemàtiques i Informàtica, Universitat de Barcelona, Barcelona, Spain
