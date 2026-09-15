@@ -47,7 +47,7 @@ All dataset paths are passed in via Hydra config/CLI overrides or the `scripts/*
 
 **🧠 Brain MRI — OASIS-3 (Alzheimer's progression)**
 1. Request access to and download **[OASIS-3](https://sites.wustl.edu/oasisbrains/)** (Data Use Agreement required — we cannot redistribute the imaging data itself).
-2. Preprocess the T1-weighted scans with **[turboprep](https://github.com/LemuelPuglisi/turboprep)** (registration, skull-stripping, SynthSeg segmentation, intensity normalization), as used by [BrLP](https://github.com/LemuelPuglisi/BrLP)/TADM-3D, at **1.5 mm isotropic** resolution.
+2. Preprocess the T1-weighted scans with **[turboprep](https://github.com/LemuelPuglisi/turboprep)** (registration, skull-stripping, SynthSeg segmentation, intensity normalization), as used by [BrLP](https://github.com/LemuelPuglisi/BrLP), at **1.5 mm isotropic** resolution.
 3. Build a `our_B_filtered.csv` pair table with one row per (baseline, follow-up) pair, with the columns consumed by `dataset/OASIS_Dataset.py` — see the full column list and `split` rules in [Configuration](#configuration--training) below.
 4. Point `OASIS_DATA_ROOT` (in the scripts) or `dataset.root_dir` (Hydra) at this CSV.
 
