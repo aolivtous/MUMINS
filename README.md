@@ -151,17 +151,14 @@ This repository is released under **CC BY-NC-ND 4.0** (Attribution-NonCommercial
 If you find this work useful, please consider to ⭐ star this repository and cite our paper:
 
 ```bibtex
-@misc{oliveras2026mumins,
-  title         = {{MUMINS}: Metadata-conditioned Uncertainty-aware Medical Image Next-state Synthesis},
-  author        = {Oliveras Tous, Anna and Mar\'i, Roger and Redondo, Rafael and
-                   Guardi\`a-Olivella, Oriol and Ugwu, Cynthia Ifeyinwa and Tost, Ana and
-                   Nagarajan, Bhalaji and Migliorelli, Carolina and Ribas, Vicent and
-                   Radeva, Petia},
-  year          = {2026},
-  eprint        = {TODO},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CV},
-  note          = {arXiv:TODO -- update once assigned; under review at WACV 2027}
+@misc{oliveras2026muminsmetadataconditioneduncertaintyawaremedical,
+      title={MUMINS: Metadata-conditioned Uncertainty-aware Medical Image Next-state Synthesis}, 
+      author={Anna Oliveras and Roger Marí and Rafael Redondo and Oriol Guardià and Cynthia Ifeyinwa Ugwu and Ana Tost and Bhalaji Nagarajan and Carolina Migliorelli and Vicent Ribas and Petia Radeva},
+      year={2026},
+      eprint={2609.17169},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2609.17169}, 
 }
 ```
 
