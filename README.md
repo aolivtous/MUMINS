@@ -1,7 +1,6 @@
 # 🔮 MUMINS: Metadata-conditioned Uncertainty-aware Medical Image Next-state Synthesis
 
 [![arXiv](https://img.shields.io/badge/arXiv-TODO-b31b1b.svg)](https://arxiv.org/abs/TODO)
-[![WACV 2027](https://img.shields.io/badge/WACV-2027%20(under%20review)-orange.svg)](#citation)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ![MUMINS overview](assets/mumins_overview.png)
@@ -13,7 +12,7 @@ MUMINS jointly diffuses the baseline scan `x` and the baseline→follow-up resid
 - 🫁 **Lung CT** — pulmonary nodule growth, following [NGP-Net](https://pubmed.ncbi.nlm.nih.gov/41557569/)'s preprocessing and splits.
 - 🧠 **Brain MRI** — Alzheimer's disease progression on [OASIS-3](https://sites.wustl.edu/oasisbrains/).
 
-📄 [Read the paper](https://arxiv.org/abs/TODO) *(link goes live once the arXiv submission is processed)*
+📄 [Read the paper](https://arxiv.org/abs/TODO)
 
 ---
 
@@ -48,11 +47,11 @@ All dataset paths are passed in via Hydra config/CLI overrides or the `scripts/*
 
 **🧠 Brain MRI — OASIS-3 (Alzheimer's progression)**
 1. Request access to and download **[OASIS-3](https://sites.wustl.edu/oasisbrains/)** (Data Use Agreement required — we cannot redistribute the imaging data itself).
-2. Preprocess the T1-weighted scans with **[turboprep](https://github.com/LemuelPuglisi/turboprep)** (registration, skull-stripping, SynthSeg segmentation, intensity normalization), as used by [BrLP](https://github.com/LemuelPuglisi/BrLP)/TADM-3D, at **1.5 mm isotropic** resolution.
+2. Preprocess the T1-weighted scans with **[turboprep](https://github.com/LemuelPuglisi/turboprep)** (registration, skull-stripping, SynthSeg segmentation, intensity normalization), as used by [BrLP](https://github.com/LemuelPuglisi/BrLP), at **1.5 mm isotropic** resolution.
 3. Build a `our_B_filtered.csv` pair table with one row per (baseline, follow-up) pair, with the columns consumed by `dataset/OASIS_Dataset.py` — see the full column list and `split` rules in [Configuration](#configuration--training) below.
 4. Point `OASIS_DATA_ROOT` (in the scripts) or `dataset.root_dir` (Hydra) at this CSV.
 
-To save you from having to re-derive our exact experimental split, **[`data/oasis_samples.txt`](data/oasis_samples.txt)** lists every OASIS-3 scan we used (1352 scans / 492 subjects / 1433 pairs, 70/15/15 split, kept intra-patient) by its own session ID (e.g. `OAS30001_MR_d0129_anat3`) — no local paths, just IDs you can match against your own OASIS-3 download. See [Reproducing the OASIS-3 split](#reproducing-the-oasis-3-split).
+To save you from having to re-derive our exact experimental split, **[`data/oasis_samples.txt`](data/oasis_samples.txt)** lists every OASIS-3 scan we used by its own session ID (e.g. `OAS30001_MR_d0129_anat3`) which you can match against your own OASIS-3 download. See [Reproducing the OASIS-3 split](#reproducing-the-oasis-3-split).
 
 **🫁 Lung CT — Pulmonary Nodule Growth (PNG)**
 
@@ -162,7 +161,7 @@ If you find this work useful, please consider to ⭐ star this repository and ci
 }
 ```
 
-**Authors:** Anna Oliveras Tous¹˒², Roger Marí¹, Rafael Redondo¹, Oriol Guardià-Olivella¹, Cynthia Ifeyinwa Ugwu¹, Ana Tost¹, Bhalaji Nagarajan³, Carolina Migliorelli¹, Vicent Ribas¹, Petia Radeva²˒⁴
+**Authors:** Anna Oliveras¹˒², Roger Marí¹, Rafael Redondo¹, Oriol Guardià-Olivella¹, Cynthia Ifeyinwa Ugwu¹, Ana Tost¹, Bhalaji Nagarajan³, Carolina Migliorelli¹, Vicent Ribas¹, Petia Radeva²˒⁴
 
 ¹ Eurecat, Centre Tecnològic de Catalunya, Barcelona, Spain
 ² Dept. de Matemàtiques i Informàtica, Universitat de Barcelona, Barcelona, Spain
