@@ -5,7 +5,7 @@ dim_mults: [1,2,4,8]
 denoising_fn: Unet3D
 timesteps: ???
 loss_type: l1 
-learned_variance: False
+learned_variance: True
 model_path: ???
 model_num: ???
 out_dir: ???
