@@ -461,7 +461,7 @@ def main(conf: DictConfig):
             if sampler == 'ddim':
                 th.cuda.synchronize()          # ensure GPU is idle before timing
                 t_start = time.perf_counter()
-                result, variance_map = diffusion.p_sample_loop_pair_ddim_A(
+                result, variance_map = diffusion.p_sample_loop_pair_ddim(
                     shape_img0=imgage_0.size(),
                     shape_img1=imgage_1.size(),
                     cond=cond,
