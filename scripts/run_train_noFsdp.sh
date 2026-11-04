@@ -64,10 +64,6 @@ esac
 export WANDB_DIR="${WANDB_DIR:-${RESULTS_ROOT}/wandb_logs}"
 mkdir -p "$WANDB_DIR"
 
-# SECURITY: do not hardcode your API key here. Run `wandb login` once on this
-# machine, or export WANDB_API_KEY from a private file/secret manager before
-# launching this script.
-
 #------------------ Output path ------------------#
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 RESULTS_DIR="${RESULTS_ROOT}/checkpoints/MUMINS_${DATASET}_${CH}ch_var${LEARN_VAR}_${TIMESTEPS}s_diff${DIFF}_size${SIZE}_noFsdp/${TIMESTAMP}"
