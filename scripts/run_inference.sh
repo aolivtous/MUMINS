@@ -34,7 +34,7 @@ NGP_DATA_ROOT="/path/to/lung_nodule_growth"
 RESULTS_ROOT="/path/to/MUMINS/outputs"
 # Example for an OASIS (brain MRI) checkpoint:
 # MODEL_DIR="/path/to/MUMINS/outputs/checkpoints/MUMINS_OASIS_2ch_varTrue_300s_diffTrue_size128/<timestamp>"
-# MODEL_NUM=2705
+# MODEL_NUM=3000
 MODEL_DIR="/path/to/MUMINS/outputs/checkpoints/MUMINS_NGP_2ch_varTrue_300s_diffTrue_size64/<timestamp>"
 MODEL_NUM=3000
 DATASET="NGP"
